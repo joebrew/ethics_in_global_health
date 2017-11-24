@@ -1,0 +1,175 @@
+---
+title: Assignment 4
+subtitle: Ethics in Global Health
+date: ''
+output: 
+  pdf_document:
+    includes:
+      in_header: preamble.sty
+fig_width: 4
+fig_height: 2.6
+bibliography: bibliography.bib
+---
+
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, comment = NA, error= FALSE, cache = FALSE}
+# Packages
+library(tidyverse)
+library(knitr)
+library(Hmisc)
+library(brew)
+library(maragra)
+library(knitr)
+library(googleVis)
+library(RColorBrewer)
+op <- options(gvis.plot.tag='chart')
+
+## Global options
+options(max.print="75")
+opts_chunk$set(echo=FALSE,
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+
+
+
+\begin{center}
+\begin{large}
+
+Joe Brew\footremember{isglobal}{Barcelona Institute for Global Health: c/ Rosselló, 132, 5è 2a. 08036, Barcelona, Spain}\footremember{cism}{Centro de Investigação em Saúde de Manhiça: Vila da Manhiça, Bairro Cambeve, Rua 12, Distrito da Manhiça, CP 1929, Maputo, Mozambique}\footremember{vu}{VU University Amsterdam: De Boelelaan 1105, 1081 HV Amsterdam, Netherlands}
+
+\end{large}
+\end{center}
+
+\vspace{5mm}
+
+\begin{center}
+\textbf{Assignment summary}  
+\end{center}
+
+\vspace{5mm}
+\begin{center}
+\begin{changemargin}{3cm}{3cm} 
+
+You will write a reflective equilibrium analysing the ethical problems emerging from the case that will be made available in my next post on Canvas, following the indications that have been given to you in today"s working group. It will consist of a document of approximately 2 pages devided in three sections (within each section you can insert subheadings). Section 1 will be entitled "moral intuition", section 2 "ethical principles" and section 3 "morally/ethically relevant facts".
+
+\end{changemargin}
+\end{center}
+
+# 1. Moral intuition  
+
+The case in question pertains to a proposed study in a South-East Asian country which aims to better understand the experience of refugees with violence and trauma, and how that experience shapes their everyday life. The case is relatively sparese on details: "interviews" will be employed, but their structure and questions are not apparent. Moral intuition suggests that the likelihood of serious harm from interviews only is low; that said, there is a non-negligible risk of harm due to study participants due to the nature of the topics to be addressed (violence and trauma). Specifically, the potential for "triggering" is present, given the past experiences of the target population.
+
+When weighing magnitude and likelihood of risk [@Orb_2001] against moral intuition, this study appears low-risk. That said, it is impossible to give it full "clearance" as such without a more thorough description of the methods used for participant recruitment, and the format and protocol for information retrieval (ie, interviews).
+
+Finally, to the extent that the impetus for the research is a better understanding of a clinical population in a European country, the researchers do not provide sufficient justification for doing the study in South-East Asia in the first place. It seems an unecessarily distant (both in terms of geography and demography) proxy for the ultimate population which the researchers seek to better understand.
+
+# 2. Ethical principles  
+
+We will weigh the study's virtues against the principles of autonomy, respect, beneficence, and non-malfeasance [@Gillon_1994] [@Schor_2014].
+
+In terms of **autonomy**, the case description is troublingly empty. No mention is made of consent, nor of the selection criteria in regards to groups of special vulnerability. Though the researchers do mention the imperative for anonimity, they do not describe the methods through which data will be stored anonymously, nor do they delve into the details of how the act of interviewing itself can be compromising of anonimity. Finally, there is no description whatsoever of mechanisms by which the participants can exist the study. In short, the case does not adequately meet the ethical principle of autonomy.
+
+The principle of **respect** (which is oftentimes grouped together with the above), also appears to be neglected in this case. The local psychiatrist - in many ways the "point person" for the study - does not have time to engage with the study's contents. This indicates a lack of respect for the potential importance of the study, but more importantly, a lack of respect for the patients themselves, who deserve access to high quality care at the highest level if they are to expose themselves to any risk at all through this study.
+
+The study does imply **beneficence** in that the findings could help guide optimal treatment and more empathetic policy for immigrants from the country. That said, the recipients of any possible positive outcome of this study are not actually from the population under examination - in other words, it is reasonable to assume that external migrants are different in multiple ways from internally displaced migrants, the benefits of studying the latter may not be fully applicable to the former. This is an important shortcoming which cuts to the heart of the study's choice of target population.
+
+**Non-malfeasance** is not explicitly addressed by the researchers. Though the research is interview based and does not directly impose an intervention on the population, the fact that it deals with issues of trauma and violence suggest that the potential for non-malfeasance is both real and needs to be addressed.
+
+One area of concern spans **all** of the main aforementioned ethical principles: the issue of training. There is no mention made in the case regarding training of study workers. Untrained staff not only puts at risk the principles of non-malfeasance, beneficence and autonomy, it also explicitly violates the explicit requirement for trained staff as laid out in the Nuremberg code [@Greek_2012] [@nur]. There are many examples of successful cross-national training programs for similar studies [@Millum_2014], and the researchers would do well to emulate one.
+
+In the context of instability and internal strife, it is especially important to take into account the difficult to quantify characteristic of "virtue" . Regardless of the refinement of a study protocol, research in the developing world often means dealing in ambiguous, complex, and unfamiliar situations. Adhering to the principles of beneficience, non-malfeasance, and autonomy is not as simple as designing a study well; it also means having the intention - and in some cases the courage - to question oneself and be aware of perverse incentives. Researchers must be prepared to "do what they believe is ethically right and resist what is unethical" even if outside of the study's plan [@O_Math_na_2015]. In order to provide a full and comprehensive review of this study's ethical merits, it would therefore be appropriate to request more information not on the study itself, but rather on the researchers. Specifically, do they have a track record of adherence to ethical principles? Can they, without prompting, identify the ethical shortcomings or "grey areas" of this study? And have they instilled - or do they plan to - mechanisms and processes by which study participants _and_ employees can question and report on potential ethical issues that emerge after the study begins?
+
+
+# 3. Morally and ethically relevant facts  
+
+The case in question does not have full details regarding the researchers, the research subjects, or the methods. In other words, there are many facts which are likely relevant, but cannot be fully addressed in this assignment.
+
+Of those facts present in the case description, those which are morally relevant (and the nature of their relevance) is as follows:
+
+- The needs of refugees are not fully understood. This is mentioned by the authors, justifies (implicitly) the rationale for the study, and suggests that the potential for benficence exists.
+- A European university is pioneering new diagnostic method to assess meaning. The novelty of the method suggests potential greater risk - by definition, the unintended side effects of any "new" method are not yet unknown.
+- The local psychiatrist does not have time to visit the area more than once per month, nor does he have time to participate in the study. This fact suggests that local expertise may not be available to guide the study, which is of ethical concern.
+- Community health-workers can be recruited. This is a good compensatory measure for the previous point.
+- The community health-workers generally deal with TB. Though it is good that they have clinical experience, it is not clear that they are appropriately trained or experienced for matters of trauma and psychology. This is of serious concern.
+- The community health-workers will be paid for each visit. This is important in the sense that it may cause incentives to be perversed. Over-recruitment is a possibility, symptom falsification, and rushed data collection are all elements which may be introduced in a pay-per-visit scheme. The researchers would be wise to consider alternative reimbursement methods, such as an overall salary.
+- The researchers state that they will not record "any personal information". This seems unrealistic, given that the topic of study is very personal by nature. The fact that this is stated suggests that either (a) the researchers are intentionally lying/misleading or (b) the researchers are not fully aware of the personal nature of the research they are carrying out. Both (a) and (b) are problematic.
+
+# Appendix: original case
+
+Many developed countries receive a large number of refugees
+seeking legal asylum. Most of these countries have basic
+mental health programmes which address the psychological
+needs of refugees. Most of those programmes, however,
+are at the local level and in most countries there has been
+little coherent, nationwide coordination of mental health
+services with other services for refugees, and virtually no
+mental health outreach service to refugees and victims
+of torture. Consequently, the needs of refugees are often
+misunderstood, and many do not receive the mental health
+services they need.
+
+
+A university‐based clinic in a European country is pioneering
+the psychiatric diagnosis and assessment of traumatized
+populations. Most patients at the clinic are refugees from a
+South‐East Asian country. One dilemma that faces this clinic is
+that they do not have a well‐developed, field‐tested method
+to assess the cultural, political, and social meanings of trauma
+in the life of civilian populations and the ways in which such
+experiences alter the everyday lives of the affected individuals.
+Current diagnostic scales are based on the responses of
+people from developed countries to trauma, and might not
+be adequate for measurement of the experiences and reactions
+of populations that the clinic has to deal with.
+
+
+The principal researcher at the clinic decides to conduct a
+study of internally displaced people in the refugees’ country
+of origin. The primary aim is to investigate how social and
+cultural factors influence the way these internally displaced
+people react to mass violence and trauma (especially when
+combined with forced relocation), in order to design a
+culture‐specific diagnostic scale for post‐traumatic stress
+disorder (PTSD). The principal researcher reasons that the
+knowledge gained from the study on internally displaced
+people can then be used in the work with the refugees who
+come to the clinic.
+
+
+The study will take place in a village that is a 4‐hour drive
+outside the country’s capital city. The researchers chose this
+village as the study site because a large influx of internally
+displaced people had sought safety there during a violent
+period of authoritarian rule in the country’s history. The local
+community health centre will serve as the administrative
+base for the study. A psychiatrist from a large teaching hospital
+in the capital visits the health centre for one day every
+month. While at the health centre, he mainly supervises the
+treatment of chronic psychiatric patients and has no time to
+engage in long‐term psychotherapy or group work with the
+patients. He has indicated that he does not have the time to
+be involved with the study.
+The European researchers have limited experience in the study
+country and poor knowledge of the local language. They have
+therefore decided to recruit community health workers who
+are well‐established in the village to assist them with introductions
+and translation during the planned home‐based
+interviews. These community health workers, who generally
+oversee the tuberculosis treatment in the village, will be paid a
+small honorarium for each house they visit.
+
+Each interview will take approximately one hour. The
+researchers will not record any personal information about
+the interviewees, who will remain anonymous. The researchers’
+enquiries will relate to the participants’ experiences with
+violence and trauma, and to the impact of those experiences
+on their lives.
+
+# References
+

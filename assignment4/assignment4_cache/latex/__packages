@@ -1,0 +1,17 @@
+base
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr
+knitr
+lattice
+survival
+Formula
+Hmisc
+brew
+maragra
+googleVis
+RColorBrewer
